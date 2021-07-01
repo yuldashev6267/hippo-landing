@@ -125,6 +125,7 @@ ul {
 .footer-section {
   background: #151414;
   position: relative;
+  bottom:-100px
 }
 .footer-cta {
   border-bottom: 1px solid #373636;

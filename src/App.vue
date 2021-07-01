@@ -1,17 +1,19 @@
-<template>
- <main-component />
+<template>    
+    <div>
+    <router-view/>
+    </div>
 </template>
 
 <script>
-import mainComponent from "./components/mainComponent.vue"
 export default {
-  name: 'app',
-  components: {
-    'main-component':mainComponent
+  name:"App",
+  components:{
   }
 }
 </script>
 
+
 <style>
+@import './assets/css/style.css';
 
 </style>

@@ -1,10 +1,10 @@
 <template>
     <div class="h-100">
         <div class="homepage">
-            <div class="landing-page">
-                 <mobile-menu />
+            <div :class="isOpen == true ? 'landing-page show-mobile-menu': 'landing-page'">
+                 <mobile-menu :isOpen="isOpen" />
                  <div class="main-container">
-                     <main-menu />
+                     <main-menu :handleOpen="handleOpen"   />
                      <div class="content-container">
                          <section-home />
                          <div class="section">
@@ -18,7 +18,6 @@
                              </div>
                          </div>
                          <section-back/>
-                         <footer-1 />
                      </div>
                  </div>
             </div>
@@ -51,9 +50,18 @@ export default {
         'row-5':Row5,
         'row-6':Row6,
         'section-back':SectionBack,
-        'footer-1':Footer,
     },
-        
+    data(){
+        return {
+          isOpen:false,
+        }
+    },
+    methods:{
+      handleOpen(){
+        this.isOpen = !this.isOpen;
+      },
+    
+    },     
 }
 </script>
 <style>
