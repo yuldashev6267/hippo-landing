@@ -7,7 +7,7 @@
                         <a href="javascript:;" class="navbar-logo pull-left">
                             <img src="../../assets/Hippo_size_2.png" alt="" style="width:150px" >
                         </a>
-                                        <ul class="navbar-nav d-none d-lg-flex flex-row">
+                            <ul class="navbar-nav d-none d-lg-flex flex-row">
                                             <li class="nav-item"><router-link to="/tariffs" class="router">Тарифы</router-link></li> 
       <li class="nav-item"><router-link to="/services" class="router">Услуги</router-link></li> 
       
@@ -27,7 +27,7 @@ export default {
     data(){
       return {
         links:[{
-          
+
         },{
 
         },{

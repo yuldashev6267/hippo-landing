@@ -1,7 +1,7 @@
 <template>
     <div class="h-100">
         <div class="homepage">
-            <div :class="isOpen == true ? 'landing-page show-mobile-menu': 'landing-page'">
+            <div :class="isOpen == true ? 'landing-page show-mobile-menu': 'landing-page'" >
                  <mobile-menu :isOpen="isOpen" />
                  <div class="main-container">
                      <main-menu :handleOpen="handleOpen"   />
