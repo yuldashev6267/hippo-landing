@@ -24,23 +24,23 @@
 <script>
 export default {
     name:"mainMenu",
-    data(){
-      return {
-        links:[{
-
-        },{
-
-        },{
-
-        },{
-
-        }]
-      }
-    },
+   
      props:{
         handleOpen:{
             type:Function
+        },
+         methods: {
+        handleScroll: function (event) {
+            // your code here
         }
+    },
+
+    created: function () {
+        window.addEventListener('scroll', this.handleScroll);
+    },
+    destroyed: function () {
+        window.removeEventListener('scroll', this.handleScroll);
+    }
      }
 }
 </script>
@@ -48,5 +48,8 @@ export default {
 <style>
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css);
 
-
+.logo {
+    font-size: 1.5rem;
+    color: #fff;
+}
 </style>
