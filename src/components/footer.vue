@@ -70,6 +70,7 @@
                                 <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
                                 <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
                                 <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                                <a href="#"><i class="fab fa-telegram-plane telegram-bg"></i></a>
                             </div>
                     <!-- <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
                         <div class="footer-widget">
@@ -208,6 +209,9 @@ ul {
 }
 .google-bg{
   background: #007bff;
+}
+.telegram-bg{
+  background: #008ecc;
 }
 .footer-widget-heading h3 {
   color: #fff;
