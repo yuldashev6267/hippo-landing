@@ -8360,7 +8360,7 @@ body:not(.no-footer) .v-contextmenu {
   transform: translateX(300px);
   z-index: 25;
   width: 300px;
-  background: #3a3a3a;
+  background: #fff;
   -webkit-box-shadow: initial;
   box-shadow: none;
   -webkit-transition: -webkit-transform 0.5s, -webkit-box-shadow 0.5s;

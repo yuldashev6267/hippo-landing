@@ -2,6 +2,7 @@ import Vue from "vue";
 import Router from "vue-router";
 import Home from "./views/mainView.vue";
 import Contact from "./views/contactView.vue";
+import Tariffs from "./views/tariffsView.vue";
 import Support from "./views/supportView.vue";
 import Services from "./views/servicesView.vue";
 
@@ -15,6 +16,11 @@ export default new Router({
       path: "/",
       name: "home",
       component: Home,
+    },
+    {
+      path: "/tariffs",
+      name: "tariffs",
+      component: Tariffs,
     },
     {
       path: "/contact",

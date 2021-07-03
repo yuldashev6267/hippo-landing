@@ -1,7 +1,7 @@
 <template>
-   <div class="landing-page-nav">
+   <div class="landing-page-nav" >
         <div style="height: initial;">
-            <div class="headroom--not-top headroom--not-bottom headroom--unpinned headroom" style="position: relative; top: 0px; left: 0px; right: 0px; z-index: 9999; transform: translate3d(0px, 0px, 0px);">
+            <div :class="showNavbar && lastScrollPosition < 60 ? 'headroom--top headroom--not-bottom headroom--pinned headroom':'headroom--not-top headroom--not-bottom headroom--pinned headroom'" :style="showNavbar ? 'position: relative; top: 0px; left: 0px; right: 0px; z-index: 9999; transform: translate3d(0px, 0px, 0px)':'position: fixed; top: 0px; left: 0px; right: 0px; z-index: 9999; transform: translate3d(0px, -100%, 0px); transition: all 250ms ease-in-out 0s;'">
                 <nav>
                     <div class="container d-flex align-items-center justify-content-between">
                         <a href="javascript:;" class="navbar-logo pull-left">
@@ -14,33 +14,26 @@
        <li class="nav-item"><router-link to="/support" class="router">Поддержка</router-link></li>
         <li class="nav-item"><router-link to="/contact" class="router">Контакты</router-link></li> 
                                            
-                                        </ul> <span class="mobile-menu-button"><i @click="handleOpen" class="logo fas fa-bars"></i></span>
+                                        </ul> <span class="mobile-menu-button"><i @click="handleOpen" class="logo fas fa-bars" :style="lastScrollPosition > 60?'color:#3a3a3a':''"></i></span>
                                     </div>
                                 </nav>
                             </div>
                         </div>
-                    </div> 
+                    </div>  
 </template>
 <script>
 export default {
     name:"mainMenu",
-   
      props:{
         handleOpen:{
             type:Function
         },
-         methods: {
-        handleScroll: function (event) {
-            // your code here
-        }
+    showNavbar:{
+      type:Boolean  
     },
-
-    created: function () {
-        window.addEventListener('scroll', this.handleScroll);
-    },
-    destroyed: function () {
-        window.removeEventListener('scroll', this.handleScroll);
-    }
+   lastScrollPosition:{
+       type:Number
+   }
      }
 }
 </script>

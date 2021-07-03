@@ -4,7 +4,7 @@
             <div :class="isOpen == true ? 'landing-page show-mobile-menu': 'landing-page'" >
                  <mobile-menu :isOpen="isOpen" />
                  <div class="main-container">
-                     <main-menu :handleOpen="handleOpen"   />
+                     <main-menu :handleOpen="handleOpen"  :showNavbar="showNavbar" :lastScrollPosition="lastScrollPosition" />
                      <div class="content-container">
                          <section-home />
                          <div class="section">
@@ -26,6 +26,7 @@
 </template>
 
 <script>
+
 import MobileMenu from './menu/mobile-menu.vue'
 import MainMenu from './menu/main-menu.vue'
 import sectionHome from "./section-home.vue"
@@ -36,7 +37,9 @@ import Row4 from './rows/row-4.vue'
 import Row5 from './rows/row-5.vue'
 import Row6 from './rows/row-6.vue'
 import SectionBack from './section-back.vue'
-import Footer from './footer.vue'
+
+const OFFSET = 60
+
 export default {
     name:"mainComponent",
     components:{
@@ -53,15 +56,42 @@ export default {
     },
     data(){
         return {
-          isOpen:false,
+        isOpen:false,
+        showNavbar: true,
+        lastScrollPosition: 0,
+        scrollValue: 0,
         }
     },
+     mounted () {
+    this.lastScrollPosition = window.pageYOffset
+    window.addEventListener('scroll', this.onScroll)
+    const viewportMeta = document.createElement('meta')
+    viewportMeta.name = 'viewport'
+    viewportMeta.content = 'width=device-width, initial-scale=1'
+    document.head.appendChild(viewportMeta)
+  },
     methods:{
-      handleOpen(){
-        this.isOpen = !this.isOpen;
-      },
-    
-    },     
+        handleOpen(){
+            this.isOpen = !this.isOpen
+        },
+     handleScroll(e) {
+     if (window.pageYOffset < 0) {
+        return
+      }
+      if (Math.abs(window.pageYOffset - this.lastScrollPosition) < OFFSET) {
+        return
+      }
+      this.showNavbar = window.pageYOffset < this.lastScrollPosition
+      this.lastScrollPosition = window.pageYOffset
+     this.isOpen = false
+}
+    },
+    created() {
+    window.addEventListener('scroll', this.handleScroll);
+  },
+   beforeDestroy () {
+    window.removeEventListener('scroll', this.onScroll)
+  },     
 }
 </script>
 <style>
