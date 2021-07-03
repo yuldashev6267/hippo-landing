@@ -141,7 +141,7 @@ export default {
     name:"tariffs"
 }
 </script>
-<style>
+<style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Rubik&display=swap");
 
 /*==================== VARIABLES CSS ====================*/
