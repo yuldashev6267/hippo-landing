@@ -1,4 +1,5 @@
 <template>
+<div>
    <section class="pricing py-5">
   <div class="container">
     <div class="row">
@@ -66,6 +67,7 @@
     
   </div>
 </section>
+</div>
 </template>
 
 <script>
@@ -74,6 +76,8 @@ export default {
 }
 </script>
 <style>
+
+
 
 .pricing .card {
   border: none;
@@ -105,11 +109,17 @@ export default {
 .pricing ul li {
   margin-bottom: 1rem;
 }
+.pricing ul li:hover {
+  color:#008ecc;
+}
+ 
 
 .pricing .text-muted {
   opacity: 0.7;
 }
-
+.pricing .text-muted:hover {
+  opacity: 1;
+}
 .pricing .btn {
   font-size: 80%;
   border-radius: 5rem;
