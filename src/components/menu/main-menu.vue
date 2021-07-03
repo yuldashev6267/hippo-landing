@@ -21,8 +21,9 @@
                         </div>
                     </div>  
 </template>
-<script>
-export default {
+<script> 
+
+export default { 
     name:"mainMenu",
      props:{
         handleOpen:{

@@ -37,7 +37,7 @@ export default {
 
 
 <style>
-@import './assets/css/style.css';
+/* @import './assets/css/style.css'; */
 .fade-enter-active,
 .fade-leave-active {
   transition-property: height, opacity;
