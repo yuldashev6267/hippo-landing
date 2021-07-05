@@ -7,7 +7,7 @@
                         <div class="single-cta">
                             <i class="fas fa-map-marker-alt"></i>
                             <div class="cta-text">
-                                <h4>Find us</h4>
+                                <h4>Найди нас</h4>
                                 <span>Tashkent qanaqdir joy</span>
                             </div>
                         </div>
@@ -16,8 +16,8 @@
                         <div class="single-cta">
                             <i class="fas fa-phone"></i>
                             <div class="cta-text">
-                                <h4>Call us</h4>
-                                <span>+998974200996</span>
+                                <h4>позвони нам</h4>
+                                <span>+998974040434 <br>+998983110434</span>
                             </div>
                         </div>
                     </div>
@@ -25,7 +25,8 @@
                         <div class="single-cta">
                             <i class="far fa-envelope-open"></i>
                             <div class="cta-text">
-                                <h4>Mail us</h4>
+                                <h4>Напишите нам
+</h4>
                                 <span>mail@info.com</span>
                             </div>
                         </div>
@@ -54,7 +55,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
                         <div class="footer-widget">
                             <div class="footer-widget-heading">
-                                <h3>Useful Links</h3>
+                                <h3>Полезные ссылки</h3>
                             </div>
                             <ul>
                                 <li><a>Home</a></li>
@@ -66,7 +67,8 @@
                         </div>
                     </div>
                     <div class="footer-social-icon">
-                                <span>Follow us</span>
+                                <span>
+Подписывайтесь на нас</span>
                                 <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
                                 <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
                                 <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>

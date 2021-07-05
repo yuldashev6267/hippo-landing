@@ -1,15 +1,14 @@
 <template>
 <div :class="isOpen == true ? 'landing-page show-mobile-menu': 'landing-page'">
- <div class="mobile-menu"><a href="javascript:;" class="logo-mobile"><img src="../assets/Hippo_size_2.png" alt=""></a>
+ <div class="mobile-menu"><a href="javascript:;" class="logo-mobile"><img src="../assets/Logo_blue.png" alt=""></a>
                     <ul class="navbar-nav">
+                        <li class="nav-item"><router-link to="/" class="router">Главная 
+</router-link></li> 
                           <li class="nav-item"><router-link to="/tariffs" class="router">Тарифы</router-link></li> 
       <li class="nav-item"><router-link to="/services" class="router">Услуги</router-link></li> 
       
        <li class="nav-item"><router-link to="/support" class="router">Поддержка</router-link></li>
-        <li class="nav-item"><router-link to="/contact" class="router">Контакты</router-link></li>  
-                        <li class="nav-item">
-                            <div class="separator"></div>
-                        </li>
+        <li class="nav-item"><router-link to="/contact" class="router">Контакты</router-link></li>
                        
                     </ul>
                 </div>    <div class="main-container">
@@ -22,12 +21,15 @@
                             <img src="../assets/Hippo_size_2.png" alt="" style="width:150px" >
                         </a>
                             <ul class="navbar-nav d-none d-lg-flex flex-row">
+                                <li class="nav-item"><router-link to="/" class="router">Главная 
+</router-link></li> 
                                             <li class="nav-item"><router-link to="/tariffs" class="router">Тарифы</router-link></li> 
       <li class="nav-item"><router-link to="/services" class="router">Услуги</router-link></li> 
       
        <li class="nav-item"><router-link to="/support" class="router">Поддержка</router-link></li>
         <li class="nav-item"><router-link to="/contact" class="router">Контакты</router-link></li>  
-                                           
+                   
+                                          
                                         </ul> <span class="mobile-menu-button"><i @click="handleOpen" class="logo fas fa-bars"></i></span>
                                     </div>
                                 </nav>
@@ -41,7 +43,6 @@
 
 
 <script>
-// import MainMenu from '../components/menu/main-menu.vue'
 import tariffs from "../components/routerComponents/tariffs.vue"
 export default {
     name:"tariffs-view",
@@ -56,8 +57,9 @@ export default {
     methods:{
       handleOpen(){
         this.isOpen = !this.isOpen;
+        console.log(this.cardData)
       },
-    
     },
+  
 }
 </script>

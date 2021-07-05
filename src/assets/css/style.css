@@ -8372,7 +8372,6 @@ body:not(.no-footer) .v-contextmenu {
 .landing-page .logo-mobile {
   display: block;
   text-align: center;
-  padding: 3rem 2rem;
   background: none;
   width: unset;
   height: unset;
