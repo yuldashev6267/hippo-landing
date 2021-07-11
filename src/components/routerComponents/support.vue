@@ -1,4 +1,7 @@
 <template>
+
+    
+
 <div class="section">
     <div class="container">
     <div>
@@ -32,3 +35,9 @@ export default {
     name:"support"
 }
 </script>
+
+<style>
+.section{
+    overflow-x: hidden;
+} 
+</style>

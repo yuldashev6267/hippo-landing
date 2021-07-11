@@ -13,7 +13,8 @@
                    
                         
                     </ul>
-                </div>    <div class="main-container">
+                </div>    
+                <div class="main-container">
    <div class="landing-page-nav" style="background-color:#3a3a3a;position:relative">
         <div style="height: initial;">
             <div class="headroom--not-top headroom--not-bottom headroom--unpinned headroom" style="position: relative; top: 0px; left: 0px; right: 0px; z-index: 9999; transform: translate3d(0px, 0px, 0px);">
