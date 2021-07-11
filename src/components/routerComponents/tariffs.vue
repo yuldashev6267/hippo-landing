@@ -8,20 +8,20 @@
         <div class="card mb-5 mb-lg-0">
           <div class="card-body" >
             <h5 class="card-title text-muted text-uppercase text-center"><span style="color:black;font-weight:900">{{card1.tariff}}</span></h5>
-            <h6 class="card-price text-center"><span  style="color:#008ecc">{{card1.price}}&nbsp;000</span><span class="period text-center">sum</span></h6>
+            <h6 class="card-price text-center"><span  style="color:#008ecc">{{card1.price}}&nbsp;000</span><span class="text-center" style="font-size:0.8rem">сум</span></h6>
             <p class="text-center" style="font-size:0.8rem">
             Срок действият:1 месяц</p>
             <hr>
             <ul class="fa-ul">
-              <li><span class="fa-li"><i class="fas fa-check"></i></span>Бесконечный Товары</li>
-              <li><span class="fa-li"><i class="fas fa-check"></i></span><span  class="text-1">продажи </span><span>лимит {{card1.salesLimit}}<br>сверхлимит: {{card1.sLimit}} сум</span> </li>
-              <li><span class="fa-li"><i class="fas fa-check"></i></span><span class="text-1">Приходы </span>лимит {{card1.parishesLimit}}<br>сверхлимит {{card1.pLimit}} сум </li>
-              <li><span class="fa-li"><i class="fas fa-check"></i></span><span class="text-1">Возвраты </span>Лимит {{card1.refundsLimit}}<br>сверхлимит {{card1.rlimit}} сум</li>
-              <li><span class="fa-li"><i class="fas fa-check"></i></span><span class="text-1">Перевод </span>Лимит {{card1.transferLimit}}<br>сверхлимит {{card1.tLimit}} сум</li>
-<li><span class="fa-li"><i class="fas fa-check"></i></span><span class="text-1">Производство </span>лимит {{card1.productionLimit}}.<br>сверхлимит {{card1.prLimit}} сум 
+              <li><span class="fa-li"><i class="fas fa-dot-circle"></i></span>Бесконечный Товары</li>
+              <li><span class="fa-li"><i class="fas fa-dot-circle"></i></span><span  class="text-1">продажи </span><span>лимит {{card1.salesLimit}}<br>сверхлимит: {{card1.sLimit}} сум</span> </li>
+              <li><span class="fa-li"><i class="fas fa-dot-circle"></i></span><span class="text-1">Приходы </span>лимит {{card1.parishesLimit}}<br>сверхлимит {{card1.pLimit}} сум </li>
+              <li><span class="fa-li"><i class="fas fa-dot-circle"></i></span><span class="text-1">Возвраты </span>Лимит {{card1.refundsLimit}}<br>сверхлимит {{card1.rlimit}} сум</li>
+              <li><span class="fa-li"><i class="fas fa-dot-circle"></i></span><span class="text-1">Перевод </span>Лимит {{card1.transferLimit}}<br>сверхлимит {{card1.tLimit}} сум</li>
+<li><span class="fa-li"><i class="fas fa-dot-circle"></i></span><span class="text-1">Производство </span>лимит {{card1.productionLimit}}.<br>сверхлимит {{card1.prLimit}} сум 
 </li>
 
-<li><span class="fa-li"><i class="fas fa-check"></i></span><span class="text-1">Ревизия </span>лимит {{card1.revisionLimit}}<br> сверхлимит {{card1.reLimit}} сум
+<li><span class="fa-li"><i class="fas fa-dot-circle"></i></span><span class="text-1">Ревизия </span>лимит {{card1.revisionLimit}}<br> сверхлимит {{card1.reLimit}} сум
 </li>
             </ul>
           </div>
