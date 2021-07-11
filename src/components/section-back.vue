@@ -1,5 +1,5 @@
 <template>
-    <div class="section background">
+    <div class="section background sectionBack">
         <div id="layouts" class="container">
             <div class="row">
                 <div class="col-12 offset-0 col-lg-8 offset-lg-2 text-center">
@@ -40,3 +40,8 @@ export default {
     name:"sectionBack"
 }
 </script>
+<style>
+.sectionBack {
+    overflow-y: hidden;
+}
+</style>
